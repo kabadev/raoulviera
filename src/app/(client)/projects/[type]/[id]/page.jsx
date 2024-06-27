@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const page = async ({ params }) => {
   const { type, id } = params;
-  const res = await fetchData(`/${type}/${id}`);
-
+  const ress = await fetchData(`/${type}/${id}`);
+  const res = ress || [];
   return (
     <main className="p-12 min-h-[500px] flex gap-10 max-md:flex-col max-sm:p-4 ">
       <div className="w-full bg-white rounded-2xl p-6 max-md:w-full max-sm:p-2">

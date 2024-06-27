@@ -4,8 +4,8 @@ import { fetchData } from "../../../../utils";
 
 const page = async ({ params }) => {
   const { type } = params;
-  const res = await fetchData(`/${type}/categories`);
-
+  const ress = await fetchData(`/${type}/categories`);
+  const res = ress || [];
   return (
     <main className="p-12 min-h-[500px] flex gap-10 max-md:flex-col max-sm:p-4 ">
       <div className="w-full bg-white rounded-2xl p-6 max-md:w-full max-sm:p-2">

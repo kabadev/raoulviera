@@ -5,7 +5,8 @@ import Resume from "./components/Resume";
 import Image from "next/image";
 import { fetchData } from "../../utils";
 export default async function Home() {
-  const res = await fetchData(`/settings`);
+  const ress = await fetchData(`/settings`);
+  const res = ress || {};
   return (
     <main className="p-12 flex gap-10 max-md:flex-col max-sm:p-4 ">
       <Profile data={res} />

@@ -3,7 +3,8 @@ import { fetchData } from "../../../utils";
 import Resume from "../components/Resume";
 import parse from "html-react-parser";
 const page = async () => {
-  const res = await fetchData(`/settings`);
+  const ress = await fetchData(`/settings`);
+  const res = ress || {};
   return (
     <main className="p-12 flex gap-10 max-md:flex-col max-sm:p-4 ">
       <div className="w-full bg-white rounded-2xl p-6 max-md:w-full max-sm:p-2">

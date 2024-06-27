@@ -6,8 +6,8 @@ import parse from "html-react-parser";
 
 const page = async ({ params }) => {
   const { type, postid } = params;
-  const project = await fetchData(`/blender/${postid}`);
-
+  const projects = await fetchData(`/blender/${postid}`);
+  const project = projects || {};
   return (
     <main className="p-12 min-h-[500px] flex gap-10 max-md:flex-col max-sm:p-4 ">
       <div className="w-full bg-white rounded-2xl p-6 max-md:w-full max-sm:p-2">
