@@ -1,0 +1,36 @@
+.sidebar {
+  background: var(--color-white);
+  height: 100vh;
+  position: fixed;
+  /* overflow-y: scroll; */
+  box-shadow: 1px 2px 6px var(--gray);
+}
+.sidebar_header {
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+}
+.sidebar_header h3 {
+  color: var(--primary);
+}
+.sidebar .list_items {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.list_items a {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  color: var(--color);
+  font-weight: 600;
+}
+
+.list_items a:hover {
+  background: var(--card-color);
+}
+.list_items a.active__nav {
+  background: var(--card-color);
+}
