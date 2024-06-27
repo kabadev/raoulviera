@@ -1,6 +1,6 @@
 export async function fetchData(url) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/${url}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api${url}`, {
       cache: "no-store",
     });
     if (!res.ok) {
