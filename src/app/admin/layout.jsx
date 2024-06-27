@@ -1,3 +1,4 @@
+import { MantineProvider } from "@mantine/core";
 import "./App.css";
 import "./cad/cad.css";
 export default function Layout({ children }) {
